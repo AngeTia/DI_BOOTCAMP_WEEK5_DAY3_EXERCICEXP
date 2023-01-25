@@ -14,6 +14,11 @@ public class HelloApplication {
 	}
 
 	@GetMapping("/")
+	public String index() {
+		return "Welcome to my home page: Enter in url: \"http://localhost:8080/hello\" to see Hello World message";
+	}
+
+	@GetMapping("/hello")
 	public String hello() {
 		return "Hello World";
 	}
